@@ -1,5 +1,20 @@
 #!/usr/bin/env python
+import os
 
-f = open('../request')
+import sys
+from notify_run import Notify
 
-print(response)
+
+def send_message(text):
+    os.system('curl https://notify.run/UVHu5I1lJAYv3Njo -d ' + text)
+    # notify = Notify()
+    # notify.register()
+    # notify.send(text)
+
+
+if __name__ == "__main__":
+    body = ''
+    for line in sys.stdin:
+        body += line
+
+    send_message('hello world')

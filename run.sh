@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-./src/request_sender.sh > response
+notify-run configure https://notify.run/UVHu5I1lJAYv3Njo
 
-cat response | grep 'Brak'
+./src/request_sender.sh | python src/notifier.py

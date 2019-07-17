@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
-notify-run configure https://notify.run/UVHu5I1lJAYv3Njo
+date >> /home/fisent/Documents/luxmed_watcher/log
 
-./src/request_sender.sh | python src/notifier.py
+/home/fisent/Documents/luxmed_watcher/src/request_sender.sh | python /home/fisent/Documents/luxmed_watcher/src/notifier.py >> /home/fisent/Documents/luxmed_watcher/log
+
